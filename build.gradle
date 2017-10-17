@@ -15,7 +15,11 @@ repositories {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
-    compile 'com.github.swapUniba:crowd-pulse-data-java:0.0.1'
+    compile 'com.github.swapUniba:crowd-pulse-data-java:master-SNAPSHOT'
     compile 'io.reactivex:rxjava:1.0.9'
 }
